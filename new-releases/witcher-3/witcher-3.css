@@ -1,0 +1,232 @@
+body{
+  background: whitesmoke;
+}
+.header{
+  background-color: #454545;
+  background-color: whitesmoke;
+  height: 50vw;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.img-container{
+  width: 100%;
+  height: 30%;
+}
+.header img{
+  width: 100%;
+  height: 100%;
+}
+.button-container{
+  width: 100%;
+  height: 30%;
+}
+.buy-button{
+  width: 100%;
+  height: 30%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.button-container button{
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+}
+.cancel-button{
+  width: 100%;
+  height: 30%;
+}
+/*MAIN*/
+.main{
+  width: 80%;
+  height: 100vw;
+  background-color: whitesmoke;
+}
+/*IMAGE CONTAINER*/
+.image-container{
+  width: 100%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.image{
+  width: 20%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.image:hover{
+  cursor: default;
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.3);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.3);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.3);
+  transition: all 200ms ease-in;
+  transform: scale(1.3);
+  transition: 1s;
+  -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+.centered{
+ text-align: center;
+ color: white;
+ position: absolute;
+ top: 90%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+/*CONTENT CONTAINER*/
+.content-container{
+  height: 60%;
+  width: 100%;
+  margin-top: 50px;
+  font-family: 'Dancing Script', cursive;
+}
+.content{
+  width: 90%;
+  height: 35%;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.content p{
+  font-size: 18px;
+}
+.content:hover{
+  cursor: default;
+  border-radius: 10px;
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
+  transition: 1s;
+  color: orange;
+}
+.content-image{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.content-image img{
+  height: 100%;
+  width: 100%;
+}
+.content-info{
+  border-style: double;
+  border-color: orange;
+  padding: 50px 50px 50px 50px;
+  width: 50%;
+  height: 100%;
+  float: right;
+  text-align: justify;
+}
+/*FOOTER*/
+.footer{
+  width: 80%;
+  height: 700px;
+  background: whitesmoke;
+}
+.footer:hover{
+  cursor: default;
+}
+.system-requirements{
+  height: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.system-requirements h3{
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
+.system-requirements ul{
+  list-style-type: square;
+}
+.minimum{
+  width: 100%;
+  height: 50%;
+  text-align: justify;
+  border-style: double;
+  border-color: orange;
+  background: white;
+}
+.recomended{
+  margin-top: 20px;
+  width: 100%;
+  height: 50%;
+  text-align: justify;
+  border-style: double;
+  border-color: orange;
+  background: white;
+}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+  .main{
+    height: 100%;
+  }
+  .image-container{
+    display: block;
+  }
+  .image{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .content-container{
+    height: 900px;
+    display: block;
+  }
+  .content{
+    display: block;
+    height: 200px;
+    width: 100%;
+  }
+  .content-image{
+    width: 100%;
+  }
+  .content-info{
+    width: 100%;
+  }
+  .content h4{
+    font-size: 10px;
+    top:0;
+    left: 0;
+  }
+  .content p{
+    font-size: 10px;
+  }
+  .footer{
+    height: 100%;
+    font-size: 6px;
+  }
+}

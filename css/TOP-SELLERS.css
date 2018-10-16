@@ -1,0 +1,162 @@
+
+body{
+  --background-image: url(../wallpapers/13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+
+.top-sellers{
+  height: 650px;
+  width: 900px;
+  margin-left: 450px;
+  margin-top: 0px;
+}
+
+.top-sellers-title{
+  color: black;
+}
+
+.top-sellers-title p{
+  color: black;
+}
+
+.top-sellers-game{
+  box-sizing: border-box;
+  width: 750px;
+  height: 80px;
+  margin-top: 20px;
+  border-bottom: 1px solid;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+
+.top-sellers-game:hover{
+  cursor: pointer;
+  --background-color: #808080;
+  box-shadow: 3px 3px 3px gray;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  --background: #B4B7BA;
+  color: #fff;
+  border: 1px solid gray;
+}
+
+.top-sellers-game img{
+  width: 150px;
+  height: 100%;
+
+}
+
+.game-name{
+  color: black;
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+}
+
+.game-release-date{
+  display: inline-block;
+  width: 275px;
+  height: 100%;
+  color: black !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.game-price{
+  display: inline-block;
+  width: 85px;
+  height: 100%;
+  color: black !important;
+  text-align: right;
+}
+
+
+/*SIDE BAR*/
+
+.siderbar-container {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar {
+    --background-color: inherit;
+    color: #fff;
+    transition: all 0.3s;
+    height: 900px;
+    margin-top: 0px;
+    float: left;
+    display: inline-block;
+    background: #36383a;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+    background-color: inherit !important;
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    --color: white;
+}
+
+a, a:hover, a:focus {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+#sidebar ul p {
+    color: white;
+    padding: 10px;
+}
+
+ul ul a { /*menu nho*/
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: 0px;
+    }
+    .sidebar-container{
+      width: 50px;
+    }
+/*  #sidebar.active {
+        margin-left: 0;
+    }*/
+}
+/*
+#sidebar.active {
+    margin-left: -250px;
+}
+*/
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
